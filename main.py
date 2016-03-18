@@ -20,7 +20,7 @@ class ExampleApp(QtGui.QMainWindow, mainwindow.Ui_MainWindow):
         self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
 
         self.toolbar = QtGui.QToolBar()
-        exit_action = QtGui.QAction(u"閉じる", self)
+        exit_action = QtGui.QAction("閉じる", self)
         exit_action.setShortcut('Ctrl+Q')
         exit_action.triggered.connect(QtGui.qApp.quit)
         self.toolbar.addAction(exit_action)
